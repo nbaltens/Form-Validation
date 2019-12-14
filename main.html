@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body onload="lightUp()">
+    
+
+<div class="container">
+
+<div class="form-left">
+    
+</div>
+
+
+<div class="form-right">
+      <div class="form-header">
+        <button id="sign-up-btn" class="form-btn">Sign Up</button>
+        <button id="sign-in-btn" class="form-btn">Sign In</button>
+    </div>
+
+
+    <form class="form-inp" id="form" name="form"  onSubmit="return errorHandle()" >
+    
+    <div id="username-div">
+        <label class="label" for="username">Username</label>
+        <input type="text" name="username" id="username" autocomplete="off" class="form-entry user">
+        <div id="username-error"></div>
+    </div>
+
+    <div id="email-div">
+        <label class="label" for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="off" class="form-entry" >
+        <div id="email-error"></div>
+    </div>
+
+
+
+    <div id="password-div">
+        <label class="label" for="username">Password</label>
+        <input type="password" name="password" id="password" class="form-entry" autocomplete="off" >
+        <div id="password-error"></div>
+    </div>
+       
+    <div id="confirm-password-div">
+        <label class="label" for="username">Confirm Password</label>
+        <input type="password" name="confirm-password" id="confirm-password" class="form-entry" autocomplete="off" >
+        <div id="confirm-password-error"></div>
+    </div>
+
+    <input type="submit" class="register-btn" id="reg-btn" value="submit">
+
+    </form>
+
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
