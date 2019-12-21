@@ -1,23 +1,20 @@
 
-	@media(max-width: 700px) {
-		.form-left {
-			display: none;
-		}
-		.form-right {
-			
-			border-bottom-left-radius: 10px;
-			border-top-left-radius: 10px;
-			position: absolute;
-			width: 100%;
-			margin: 0;
-		}
-		.container {
-			display: none;
-			margin: 0;
-		}
-
+@media(max-width: 700px) {
+	.form-left {
+	  display: none;
+	 }
+	.form-right {	
+	  border-bottom-left-radius: 10px;
+	  border-top-left-radius: 10px;
+	  position: absolute;
+	  width: 100%;
+	  margin: 0;
+	 }
+	.container {
+	  display: none;
+	  margin: 0;
+	 }
 	} 
-
 
 body {
 background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 100%);
@@ -131,6 +128,32 @@ background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 10
 	cursor: pointer;
 	background-color: rgba(0,0,0,0.5);
 }
+.login-class {
+	position: absolute;
+	right: 15px;
+	bottom: -335px;
+	width: 140px;
+	height: 50px;
+	border: none;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 10px;
+	color: rgb(0,158,253);
+	background-color: rgba(0,0,0,0.4);
+}
+.signup-class {
+	position: absolute;
+	right: 15px;
+	bottom: -190px;
+	width: 140px;
+	height: 50px;
+	border: none;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 10px;
+	color: rgb(0,158,253);
+	background-color: rgba(0,0,0,0.4);
+}
 #username-div,
 #email-div,
 #password-div,
@@ -185,7 +208,3 @@ background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 10
 .signin {
 	display: none;
 };
-
-
-
-
