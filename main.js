@@ -25,8 +25,10 @@ loginBtn.addEventListener('click', function() {
 	confirmPasswordDiv.classList.add('signin')
 	loginBtn.classList.add('form-btnactive')
 	signupBtn.classList.remove('form-btnactive')
-
-
+	submitBtn.innerHTML = "Sign In";
+	submitBtn.classList.remove('signup-class')
+	submitBtn.classList.add('login-class')
+	
 });
 
 signupBtn.addEventListener('click', function() {
@@ -34,6 +36,9 @@ signupBtn.addEventListener('click', function() {
 	confirmPasswordDiv.classList.remove('signin')
 	signupBtn.classList.add('form-btnactive')
 	loginBtn.classList.remove('form-btnactive')
+	submitBtn.classList.remove('login-class')
+	submitBtn.classList.add('signup-class')
+	submitBtn.innerHTML = "Sign Up";
 })
 
 
@@ -65,25 +70,5 @@ function errorHandle() {
 		return false;
 	}
 	return true;
-	
 
-	/*
-	const request = newXMLHttpRequest();
-
-	request.open("post", "form.php");
-	request.onload = function() {
-		console.log(request.responseText);
-	} 
-	request.send(new FormData(myForm));
-
-	*/
 }
-
-
-
-
-
-
-
-
-
