@@ -1,2 +1,2 @@
 # Form-Validation
-this is a project where I used javascript to create form validation.
+This Project was built with HTML, CSS, Javascript and PHP. I used javascript to validate the form inputs, and PHP to aquire form in data.
