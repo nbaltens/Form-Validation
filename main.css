@@ -1,20 +1,5 @@
 
-@media(max-width: 700px) {
-	.form-left {
-	  display: none;
-	 }
-	.form-right {	
-	  border-bottom-left-radius: 10px;
-	  border-top-left-radius: 10px;
-	  position: absolute;
-	  width: 100%;
-	  margin: 0;
-	 }
-	.container {
-	  display: none;
-	  margin: 0;
-	 }
-	} 
+
 
 body {
 background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 100%);
@@ -33,7 +18,7 @@ background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 10
 	display: flex;
 	flex-direction: row;
 	margin: 80px auto;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	position: relative;
 }
 
@@ -196,7 +181,7 @@ background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 10
 	padding:0;
 	position: absolute;
 	right: 20px;
-	bottom: 30px;
+	bottom: 15px;
 }
 
 .userError,
@@ -207,4 +192,37 @@ background-image: linear-gradient( 136deg, rgb(0,158,253) 0%, rgb(42,245,152) 10
 
 .signin {
 	display: none;
-};
+}
+
+
+@media(max-width: 600px) {
+	.form-left {
+		display: none;
+		width: 0%;
+	}
+	.form-right {
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
+
+	}
+	.container {
+		margin-top: 20px;
+		width: 90%;
+	}
+
+} 
+@media(max-width: 400px){
+	.container {
+		width: 100%;
+		margin-top: 40px;
+	}
+}
+
+
+
+
